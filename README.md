@@ -54,6 +54,31 @@ Una entrega **NO** será aceptada en producción a menos que cumpla con el **Est
 
 > ⚠️ **Advertencia**: _Si falta cualquiera de estos elementos, la entrega se considera **NULA**._
 
+### 3. 📂 Estructura Sagrada del Repositorio
+
+La organización es la base de la mantenibilidad. Tu repositorio **DEBE** respetar esta jerarquía:
+
+```mermaid
+graph TD
+    A[📦 Root] --> B(📄 README.md)
+    A --> C(📂 documentacion/)
+    A --> D(📂 proyecto/)
+
+    style A fill:#ff9900,stroke:#333,stroke-width:2px,color:white
+    style B fill:#e1e1e1,stroke:#333,stroke-width:1px
+    style C fill:#00b894,stroke:#333,stroke-width:2px,color:white
+    style D fill:#0984e3,stroke:#333,stroke-width:2px,color:white
+```
+
+O en formato árbol simple:
+
+```bash
+/
+├── 📄 README.md          # Tu punto de entrada y documentación
+├── 📂 documentacion/     # Evidencia de QA y manuales
+└── 📂 proyecto/          # Tu código fuente va aquí
+```
+
 ---
 
 ## 🛠️ Flujos de Trabajo (Workflows)
